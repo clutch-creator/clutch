@@ -1,0 +1,52 @@
+# Primitives
+
+Clutch provides a variety of primitive components that serve as the foundational building blocks for creating UI elements in your application.
+These primitives include components for displaying text, images, links, and logic structures like conditional statements and loops.
+You can customize these primitives with various properties and styles in the properties panel to create dynamic and visually appealing UI elements.
+Additionally, Clutch provides a [component library](/basics/bar/library) Clutch UI kit with a range of pre-built components optimized for the Clutch theme and offering additional functionality beyond the basic primitives.
+Overall, these primitives provide a flexible and powerful toolset for creating UI elements in your application.
+
+## Block
+
+The `Block` primitive component provides a basic container for your content. It can create sections, articles, headers, main content, footers, and more.
+The `Block` component is an essential building block to your application and can be customized to fit your needs.
+
+## Text
+
+The `Text` primitive component is used to render text on your web page. 
+The `Text` primitive can render text in various contexts, such as headings, paragraphs, or even as labels for form inputs.
+The tag property can be used to change the level of the heading or the type of text element being rendered.
+
+## Link
+
+The `Link` primitive component is used to create links on your website.
+
+To use the `Link` primitive component, drag and drop it where you need it in your composition tree.
+Then, use the properties control panel to set the `href`, `children`, and `styles` properties as needed.
+
+## Image
+
+The `Image` primitive component is used to display images on your web page.
+
+To use the `Image` primitive component, drag and drop it into place or place it in your composition tree.
+Then, use the properties control panel to set the `src`, `alt`, and `styles` properties as needed.
+
+The `Image` primitive component is built on top of the Next.js 13 `Image` component and provides several benefits for rendering images on your web page.
+
+* **Optimized image loading**: Automatically optimizes your images for faster loading times by generating multiple sizes and formats of each image and serving the appropriate one based on the device and screen size.
+* **Lazy loading**: Supports lazy loading, meaning images are only loaded when they appear on the screen. This can significantly improve the performance of your web page, especially on mobile devices with slower connections.
+* **Accessibility**: Provides built-in support for accessibility features like alt text and aria attributes, which are important for visually impaired users and screen readers.
+
+By using the `Image` primitive component in Clutch.io, you can take advantage of all of these benefits without needing to write additional code.
+Set the src and alt properties as needed, and the Image component will handle the rest.
+
+## Logic
+
+### If
+
+The `If` primitive component allows you to conditionally render its children based on a condition that can be set in the properties panel using a checkbox or writing code.
+
+### Loop
+
+The `Loop` primitive component allows you to render its children a specified number of times based on an array of items.
+Using the control panel, you can pass in your array of items and render the children dynamically or statically.

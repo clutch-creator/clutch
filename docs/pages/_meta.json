@@ -1,0 +1,13 @@
+{
+  "-- Clutch Intro": {
+    "type": "separator",
+    "title": "Clutch Intro"
+  },
+  "index": "Introduction",
+  "-- Basics": {
+    "type": "separator",
+    "title": "Basics"
+  },
+  "bar": "Application bar",
+  "canvas": "Canvas and Frames"
+}
