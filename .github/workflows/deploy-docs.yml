@@ -1,0 +1,26 @@
+name: "Deploy Clutch docs to vercel"
+on:
+  push:
+    paths:
+      - docs/**
+      - .github/workflows/deploy-docs.yml
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - name: Vercel CLI
+        working-directory: docs
+        run: pnpm install --global vercel@latest
+      - name: Vercel Pull
+        working-directory: docs
+        run: vercel pull --token ${{ secrets.VERCEL_CI_TOKEN }} --scope clutch-creator --yes
+      - name: Build
+        working-directory: docs
+        run: vercel build --token ${{ secrets.VERCEL_CI_TOKEN }} --prod
+      - name: Deploy
+        working-directory: docs
+        run: vercel deploy --prod --prebuilt --token ${{ secrets.VERCEL_CI_TOKEN }} --scope clutch-creator --yes
