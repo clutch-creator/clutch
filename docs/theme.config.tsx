@@ -32,6 +32,12 @@ export default {
       </>
     );
   },
+  primaryHue: 151,
+  darkMode: false,
+  nextThemes: {
+    defaultTheme: 'dark',
+    themes: ['dark'],
+  },
   footer: {
     text: (
       <div
