@@ -4,9 +4,9 @@
     "title": "Clutch Intro"
   },
   "index": "Introduction",
-  "-- Basics": {
+  "-- Guides": {
     "type": "separator",
-    "title": "Basics"
+    "title": "Guides"
   },
   "bar": "Application bar",
   "canvas": "Canvas and Frames"
