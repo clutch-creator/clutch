@@ -3,9 +3,9 @@ import { HeaderLogo } from "./components/HeaderLogo";
 
 export default {
   logo: <HeaderLogo />,
-  docsRepositoryBase: "https://github.com/clutch-creator/clutch-docs",
+  docsRepositoryBase: "https://github.com/clutch-creator/clutch",
   project: {
-    link: "https://github.com/clutch-creator/clutch-docs",
+    link: "https://github.com/clutch-creator/clutch",
   },
   useNextSeoProps() {
     const { asPath } = useRouter();
