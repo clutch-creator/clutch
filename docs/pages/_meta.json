@@ -1,13 +1,8 @@
 {
-  "-- Clutch Intro": {
+  "index": "Getting Started",
+  "-- Guides": {
     "type": "separator",
-    "title": "Clutch Intro"
+    "title": "Guides"
   },
-  "index": "Introduction",
-  "-- Basics": {
-    "type": "separator",
-    "title": "Basics"
-  },
-  "bar": "Application bar",
-  "canvas": "Canvas and Frames"
+  "comingSoon": "Coming Soon"
 }
