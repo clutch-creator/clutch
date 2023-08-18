@@ -1,0 +1,44 @@
+name: "Bug report"
+description: Something doesn't work like it should? Tell us!
+labels: ["kind: bug", "type: needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Have a question? 👉 [Ask in chat](https://discord.gg/whfbTHMaW2).  
+        Issues in the Clutch repo are reserved for bugs. Questions on how to use Clutch will be closed.
+  - type: textarea
+    attributes:
+      label: How to reproduce
+      description: Steps to reproduce the behavior, please provide a clear description of how to reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: Please provide a description including screenshots, videos, stack traces etc.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: Please provide a clear description of what should happen.
+      placeholder: In this situation, Clutch should...
+  - type: input
+    attributes:
+      label: Operating System
+      description: What operating system is Clutch running on when you are encountering your problem? ie macOS 13.5 or Windows 10.0.19044.1889
+      placeholder: ex. macOS 13.5
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Clutch Version
+      description: What version of the clutch are you using? You can find this information in the menu Clutch > About Clutch-app
+      placeholder: ex. 1.201.0
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Other
+      placeholder: Any other details?
