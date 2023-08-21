@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://discord.gg/whfbTHMaW2
+    about: Ask questions and discuss with other community members
+  - name: Feature request
+    url: https://github.com/clutch-creator/clutch/discussions/new?category=feature-request
+    about: Share ideas for new features and improvements
