@@ -1,8 +1,12 @@
 import { useRouter } from "next/router";
-import { HeaderLogo } from "./components/HeaderLogo";
+import { HeaderLogo } from "./components/headerLogo/HeaderLogo";
+import { FooterLogo } from "./components/footerLogo/FooterLogo";
+import { LogoDivider } from "./components/logoDivider/LogoDivider";
+import { DocsWordMark } from "./components/docsWordMark/DocsWordMark";
 
 export default {
-  logo: <HeaderLogo />,
+  logo: <><HeaderLogo/><LogoDivider/><DocsWordMark/></>,
+  logoLink: false,
   docsRepositoryBase: "https://github.com/clutch-creator/clutch/tree/main/docs",
   project: {
     link: "https://github.com/clutch-creator/clutch/tree/main/docs",
@@ -48,25 +52,8 @@ export default {
           flex: 1,
         }}
       >
-        <a
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "10px",
-            justifyContent: "flex-start",
-            width: "100%",
-          }}
-          className="flex items-center gap-1 text-current"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="vercel.com homepage"
-          href="https://app.clutch.io/"
-        >
-          <span>Powered by</span>
-          <div>
-            <HeaderLogo />
-          </div>
-        </a>
+          <span>Powered by</span>          
+            <FooterLogo />
         <p className="mt-6 text-xs">© {new Date().getFullYear()}</p>
       </div>
     ),
