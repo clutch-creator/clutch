@@ -1,13 +1,10 @@
 import React from "react";
-import styles from "./HeaderLogo.module.css"
+import styles from "./HeaderLogo.module.css";
 export const HeaderLogo = () => (
-  
-  
-    <a className={styles.headerLogo} href="https://clutch.io">
+  <a className={styles.headerLogo} href="https://clutch.io">
+    <span>
       <svg
-        
-        width="260"
-        height="260"
+        height="24"
         viewBox="0 0 260 260"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +22,6 @@ export const HeaderLogo = () => (
           fill="currentColor"
         />
       </svg>
-    </a>
-    
-
-  
+    </span>
+  </a>
 );
