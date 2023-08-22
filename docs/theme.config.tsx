@@ -1,11 +1,10 @@
 import { useRouter } from "next/router";
-import { HeaderLogo } from "./components/headerLogo/HeaderLogo";
-import { FooterLogo } from "./components/footerLogo/FooterLogo";
-import { LogoDivider } from "./components/logoDivider/LogoDivider";
-import { DocsWordMark } from "./components/docsWordMark/DocsWordMark";
+import { HeaderLogo } from "./components/header-logo/HeaderLogo";
+import { FooterLogo } from "./components/footer-logo/FooterLogo";
+
 
 export default {
-  logo: <><HeaderLogo/><LogoDivider/><DocsWordMark/></>,
+  logo: <><HeaderLogo/></>,
   logoLink: false,
   docsRepositoryBase: "https://github.com/clutch-creator/clutch/tree/main/docs",
   project: {
@@ -37,10 +36,13 @@ export default {
     );
   },
   primaryHue: 151,
-  darkMode: false,
+  darkMode: true,
   nextThemes: {
     defaultTheme: 'dark',
     themes: ['dark'],
+  },
+  sidebar: {
+    toggleButton: true,
   },
   footer: {
     text: (

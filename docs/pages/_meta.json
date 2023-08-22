@@ -1,8 +1,13 @@
 {
   "index": "Getting Started",
-  "-- Guides": {
-    "type": "separator",
-    "title": "Guides"
+  "documentation": {
+    "title": "Documentation",
+    "type": "page",
+    "href": "/"
   },
-  "comingSoon": "Coming Soon"
+  "guides": {
+    "title": "Guides",
+    "type": "page"
+  }
+  
 }
